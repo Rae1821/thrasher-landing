@@ -31,25 +31,22 @@
             <a class="links" href="#">About</a>
             <a class="links" href="#">Contact</a>
         </div>
-        <span onclick="openNav()"><i class="fa-sharp fa-solid fa-bars"></i></span>
-
+        <span class="nav-bg" onclick="openNav()"><i class="fa-sharp fa-solid fa-bars"></i></span>
    
         <!-- Add all page content inside this div-->    
         <div id="main">
-
             <div class="welcome">
                 <h1 class="welcome__title">Welcome Neighbor!</h1>
                 <div class="divider-line"></div>
                 <p class="welcome__description">Welcome to the brand new Thrasher Landing HOA website! 
                     Here you will find the upcoming events, HOA documents, and info on the HOA board and
                     committee members. Be sure to sign up for our monthly newsletter!<br><br>
-                    Future features will include potluck signup pages + the ability to pay
+                    *Future features will include potluck signup pages + the ability to pay
                     your yearly dues. 
-                    <br><br>See you in the neighborhood!
+                    <br><br><em>See you in the neighborhood!</em>
                 </p>
             </div>
             
-      
             <!-- Upcoming Events -->
             <section class="events" id="events">
                 <h2 class="events__title">
@@ -58,22 +55,15 @@
                 <div class="event-cards reveal fade-bottom" id="event-cards">
                     <div class="card-container">
                         <div class="single__card" id="single__card">
-                            <p class="card__date">October 29th</p>
-                            <p class="card__title">Halloween Party<br>
-                                <span class="card__subtitle" >Potluck: 4pm | The Massey's House<br></span> 
-                                <span class="card__subtitle" >Trick or Treating @ 7pm</span> 
-                            </p>
-                            </div>
-                            <div class="single__card" id="single__card">
                             <p class="card__date">October 31st</p>
                             <p class="card__title">HOA Dues Mailed<br>
-                                <span class="card__subtitle">Payment is due by Dec 31st</span></p>
-                            </div>
-                            <div class="single__card" id="single__card">
+                            <span class="card__subtitle">Payment is due by Dec 31st</span></p>
+                        </div>
+                        <div class="single__card" id="single__card">
                             <p class="card__date">Nov 14th</p>
                             <p class="card__title">Rezoning Meeting<br>
-                                <span class="card__subtitle">Hamilton County Courthouse<br> Room 402 @ 1pm</span> </p>
-                            </div>
+                            <span class="card__subtitle">Hamilton County Courthouse<br> Room 402 @ 1pm</span> </p>
+                        </div>
                         
                     </div>
                 </div>
@@ -133,10 +123,10 @@
             <div class="contact" id="contact">
                 <h2 class="contact__title">Contact Us</h2>
                 <div class="contact__container reveal fade-top">
-                    <div class="contact__left">
+                    <div class="contact__item">
                         <img class="contact__img" src="img/sign-1.jpg" alt="thrasher landing sign" />
                     </div>
-                    <div class="contact__right">
+                    <div class="contact__item">
                         <p class="contact__description">Have a question or concern but not
                             sure who to contact? Just send us an email at <a href="mailto:address">hello@thrasherlanding.com</a>
                             or reach out in the neighborhood <a href="">Facebook Group</a>.      
@@ -161,13 +151,15 @@
             <footer class="footer">
                 <div class="footer__items">
                     <p class="footer__links">
-                    <a href="#" class="social__link">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a> 
+                        <a href="#" class="social__link">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a> 
                     </p>
                     <p class="footer__links">
-                        <a href="mailto:address">hello@thrasherlanding.com</a>
+                        <a class="email" href="mailto:address">hello@thrasherlanding.com</a>
                     </p>
+                </div>
+                <div class="copyright">
                     <p class="footer__links--copyright">© Thrasher Landing 2022</p>
                 </div>
             </footer>
