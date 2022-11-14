@@ -12,27 +12,30 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">        
         <!-- Animate.css -->
-        <link rel="stylesheet"     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
         <!-- CSS Stylesheet-->
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
+        <header class="header">
+            <!-- Navbar -->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="links" href="#">Home</a>
+                <a class="links" href="#">Events</a>
+                <a class="links" href="#">Documents</a>
+                <a class="links" href="#">About</a>
+                <a class="links" href="#">Contact</a>
+            </div>
+            <span class="nav-bg" onclick="openNav()"><i class="fa-sharp fa-solid fa-bars"></i></span>
+        </header>
+           
         <!-- Main image of sign -->
         <div class="main__img"></div>
-        <!-- Navbar -->
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a class="links" href="#">Home</a>
-            <a class="links" href="#">Events</a>
-            <a class="links" href="#">Documents</a>
-            <a class="links" href="#">About</a>
-            <a class="links" href="#">Contact</a>
-        </div>
-        <span class="nav-bg" onclick="openNav()"><i class="fa-sharp fa-solid fa-bars"></i></span>
-   
+  
         <!-- Add all page content inside this div-->    
         <div id="main">
             <div class="welcome">
@@ -43,27 +46,38 @@
                     committee members. Be sure to sign up for our monthly newsletter!<br><br>
                     *Future features will include potluck signup pages + the ability to pay
                     your yearly dues. 
-                    <br><br><em>See you in the neighborhood!</em>
                 </p>
             </div>
             
             <!-- Upcoming Events -->
             <section class="events" id="events">
                 <h2 class="events__title">
-                    Upcoming Events
+                   Upcoming Events
                 </h2>
                 <div class="event-cards reveal fade-bottom" id="event-cards">
                     <div class="card-container">
                         <div class="single__card" id="single__card">
-                            <p class="card__date">October 31st</p>
-                            <p class="card__title">HOA Dues Mailed<br>
-                            <span class="card__subtitle">Payment is due by Dec 31st</span></p>
+                            <div class="single__card--date">
+                                <p class="card__day">TBD</p>
+                                <p class="card__month">Dec</p>
+                            </div>
+                            <div class="single__card--details">
+                                <p class="card__title">Kids Nite - Christmas movie with hot chocolate + Pjs <br>
+                                <p class="card__time">7pm | TBD</p>    
+                            </div>
                         </div>
+
                         <div class="single__card" id="single__card">
-                            <p class="card__date">Nov 14th</p>
-                            <p class="card__title">Rezoning Meeting<br>
-                            <span class="card__subtitle">Hamilton County Courthouse<br> Room 402 @ 1pm</span> </p>
+                            <div class="single__card--date">
+                                <p class="card__day">09</p>
+                                <p class="card__month">Jan</p>
+                            </div>
+                            <div class="single__card--details">
+                                <p class="card__title">HOA Quarterly Meeting<br>
+                                <p class="card__time">6:00pm | Cul-de-sac</p>    
+                            </div>
                         </div>
+                    
                         
                     </div>
                 </div>
@@ -71,30 +85,36 @@
 
             <!-- Documents -->
             <section class="documents" id="documents">
-                <div class="document__container">
-                    <h2 class="document__title">HOA Documents</h2>
-                    <p class="document__description">Here you'll find all the important documents for our neighborhood
-                        + the meeting minutes from our quarterly HOA meetings.
-                        Click the link below to view, download, or print the documents.
-                    </p>
-                </div>
-                <div class="document__list reveal fade-left">
-                    <a class="document__link link__one" href="#">
-                    <span>The Covenant</span> 
-                    </a>
-                    <a class="document__link link__two" href="#">
-                        <span>The Bi-laws</span>
-                    </a>
-                    <a class="document__link link__three" href="#">
-                    <span>Meeting Minutes</span>
-                    </a>
+                <h2 class="document__title">Documents</h2>
+                <div class="document__wrapper">
+                    <div class="document__container">
+                        <p class="document__description">Here you'll find all the important documents for our neighborhood
+                            + the meeting minutes from our quarterly HOA meetings.
+                            Click the link below to view, download, or print the documents.
+                        </p>
+                    </div>
+                    <div class="document__list reveal fade-left">
+                        <a class="document__link link__one" href="#">
+                        <span class="btn-document">The Covenant</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+     
+                        </a>
+                        <a class="document__link link__two" href="#">
+                            <span class="btn-document">The Bi-laws</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <a class="document__link" href="#">
+                            <span class="btn-document">Meeting Minutes</span>    
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>                
+                        </a>
+                    </div>
                 </div>
             </section>
 
 
             <!-- About -->
             <section class="about" id="about">
-                <h2 class="about__title">Meet The Board Members</h3>
+                <h2 class="about__title">Board Members</h3>
                 <div class="about__container reveal fade-right">
                     <div class="about__section">
                         <h3 class="section__title section__title--about">Josh Kilburn</h3>
@@ -110,31 +130,33 @@
                     </div>
                     <div class="about__section">
                         <h3 class="section__title section__title--about">Beth Baxter</h3>
-                        <p class="section__subtitle section__subtitle--about">Secretary</p>
+                        <p class="section__subtitle section__subtitle--about">Board Member</p>
                     </div>
                     <div class="about__section">
                         <h3 class="section__title section__title--about">Doyle Pittman</h3>
-                        <p class="section__subtitle section__subtitle--about">Treasurer</p>
+                        <p class="section__subtitle section__subtitle--about">Board Member</p>
                     </div>
                 </div>
             </section>
 
             <!-- Contact Section -->
-            <div class="contact" id="contact">
+            <section class="contact" id="contact">
                 <h2 class="contact__title">Contact Us</h2>
                 <div class="contact__container reveal fade-top">
                     <div class="contact__item">
-                        <img class="contact__img" src="img/sign-1.jpg" alt="thrasher landing sign" />
+                        <img class="contact__img" src="img/hero-img.jpg" alt="thrasher landing sign" />
                     </div>
                     <div class="contact__item">
                         <p class="contact__description">Have a question or concern but not
-                            sure who to contact? Just send us an email at <a href="mailto:address">hello@thrasherlanding.com</a>
-                            or reach out in the neighborhood <a href="">Facebook Group</a>.      
+                            sure who to contact? Just send us an email at the address below and 
+                            a board member will get back to you.
+                            <br><br><em>See you in the neighborhood!</em>  
                         </p>
+                        <p class="contact__email"><i class="fa-solid fa-envelope"></i><a class="email" href="mailto:address">hello@thrasherlanding.com</a></p>
                     </div>
                 </div>
                <p class="contact__arrow"><i class="fa-sharp fa-solid fa-angles-down"></i></p> 
-            </div>
+            </section>
 
             <!-- Convertkit Contact Form -->
             <div class="contact-form">
@@ -156,7 +178,7 @@
                         </a> 
                     </p>
                     <p class="footer__links">
-                        <a class="email" href="mailto:address">hello@thrasherlanding.com</a>
+                        <a class="footer__email" href="mailto:address">hello@thrasherlanding.com</a>
                     </p>
                 </div>
                 <div class="copyright">
