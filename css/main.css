@@ -320,7 +320,7 @@ div.main__img {
 
 .events {
     margin: auto;
-    background-color: var(--clr-accent);
+    background-color: var(--clr-teal);
 }
 
 .events__title {
@@ -347,6 +347,7 @@ div.main__img {
 
 .card-container {
     max-width: 1100px;
+    margin: auto;
 }
 
 .single__card {
