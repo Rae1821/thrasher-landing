@@ -24,11 +24,11 @@
             <!-- Navbar -->
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a class="links" href="#">Home</a>
-                <a class="links" href="#">Events</a>
-                <a class="links" href="#">Documents</a>
-                <a class="links" href="#">About</a>
-                <a class="links" href="#">Contact</a>
+                <a class="links" href="index.html">Home</a>
+                <a class="links" href="#events">Events</a>
+                <a class="links" href="#documents">Documents</a>
+                <a class="links" href="#about">About</a>
+                <a class="links" href="#contact">Contact</a>
             </div>
             <span class="nav-bg" onclick="openNav()"><i class="fa-sharp fa-solid fa-bars"></i></span>
         </header>
@@ -41,13 +41,36 @@
             <div class="welcome">
                 <h1 class="welcome__title">Welcome Neighbor!</h1>
                 <div class="divider-line"></div>
-                <p class="welcome__description">Welcome to the brand new Thrasher Landing HOA website! 
-                    Here you will find the upcoming events, HOA documents, and info on the HOA board and
-                    committee members. Be sure to sign up for our monthly newsletter!<br><br>
+                <p class="welcome__description">Welcome to the Thrasher Landing Subdivision. 
+                    Here you will find information on neighborhood events, important reminders, HOA documents, + see 
+                    who the board members and committee members are. Don't forget to sign up for our monthly newsletter!<br><br>
                     *Future features will include potluck signup pages + the ability to pay
                     your yearly dues. 
                 </p>
             </div>
+
+            <!-- Important reminders -->
+            <section class="reminders" id="reminders">
+                <h2 class="reminders__heading">Reminders</h2>
+                <div class="reminders__container">
+                    <div class="reminder__item">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <h3 class="reminders__title">Sprinkler System</h3>
+                        <p class="reminders__description">It's time to winterize your sprinkler system
+                            and get ready for the cold weather.
+                        </p>
+                    </div>
+                    <div class="reminder__item">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <h3 class="reminders__title">Mailbox Lights</h3>
+                        <p class="reminders__description">Change out your mailbox lights 
+                            and put in the red and green bulbs for some neighborhood Christmas
+                            cheer.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
             
             <!-- Upcoming Events -->
             <section class="events" id="events">
@@ -56,21 +79,22 @@
                 </h2>
                 <div class="event-cards reveal fade-bottom" id="event-cards">
                     <div class="card-container">
-                        <div class="single__card" id="single__card">
+                         <div class="single__card" id="single__card">
                             <div class="single__card--date">
-                                <p class="card__day">TBD</p>
                                 <p class="card__month">Dec</p>
+                                <p class="card__day">10</p>
+
                             </div>
                             <div class="single__card--details">
-                                <p class="card__title">Kids Nite - Christmas movie with hot chocolate + Pjs <br>
-                                <p class="card__time">7pm | TBD</p>    
+                                <p class="card__title">Christmas Movie Night<br>
+                                <p class="card__time">7pm | Cul-de-sac</p>    
                             </div>
-                        </div>
+                        </div> 
 
                         <div class="single__card" id="single__card">
                             <div class="single__card--date">
-                                <p class="card__day">09</p>
                                 <p class="card__month">Jan</p>
+                                <p class="card__day">9</p>
                             </div>
                             <div class="single__card--details">
                                 <p class="card__title">HOA Quarterly Meeting<br>
@@ -81,6 +105,7 @@
                         
                     </div>
                 </div>
+               
             </section>
 
             <!-- Documents -->
@@ -103,8 +128,8 @@
                             <span class="btn-document">The Bi-laws</span>
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
-                        <a class="document__link" href="#">
-                            <span class="btn-document">Meeting Minutes</span>    
+                        <a class="document__link" href="img/hoa-10-21-2022.pdf" target="_blank">
+                            <span class="btn-document">HOA Meeting Minutes</span>    
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>                
                         </a>
                     </div>
@@ -117,22 +142,37 @@
                 <h2 class="about__title">Board Members</h3>
                 <div class="about__container reveal fade-right">
                     <div class="about__section">
+                        <div class="about__icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
                         <h3 class="section__title section__title--about">Josh Kilburn</h3>
                         <p class="section__subtitle section__subtitle--about">President</p>
                     </div>
-                    <div class="about__section">
+                    <div class="about__section">                        
+                        <div class="about__icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
                         <h3 class="section__title section__title--about">Greg Dooley</h3>
                         <p class="section__subtitle section__subtitle--about">Vice President</p>
                     </div>
                     <div class="about__section">
+                        <div class="about__icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
                         <h3 class="section__title section__title--about">Andy Hixson</h3>
                         <p class="section__subtitle section__subtitle--about">Treasurer</p>
                     </div>
                     <div class="about__section">
+                        <div class="about__icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
                         <h3 class="section__title section__title--about">Beth Baxter</h3>
                         <p class="section__subtitle section__subtitle--about">Board Member</p>
                     </div>
                     <div class="about__section">
+                        <div class="about__icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
                         <h3 class="section__title section__title--about">Doyle Pittman</h3>
                         <p class="section__subtitle section__subtitle--about">Board Member</p>
                     </div>
@@ -140,23 +180,22 @@
             </section>
 
             <!-- Contact Section -->
-            <section class="contact" id="contact">
+            <!-- <section class="contact" id="contact">
                 <h2 class="contact__title">Contact Us</h2>
                 <div class="contact__container reveal fade-top">
                     <div class="contact__item">
                         <img class="contact__img" src="img/hero-img.jpg" alt="thrasher landing sign" />
                     </div>
                     <div class="contact__item">
-                        <p class="contact__description">Have a question or concern but not
-                            sure who to contact? Just send us an email at the address below and 
-                            a board member will get back to you.
+                        <p class="contact__description">Have a question, concern, or just want to say hi?
+                            Send us an email at the address below and a board member will get back to you.
                             <br><br><em>See you in the neighborhood!</em>  
                         </p>
                         <p class="contact__email"><i class="fa-solid fa-envelope"></i><a class="email" href="mailto:address">hello@thrasherlanding.com</a></p>
                     </div>
                 </div>
                <p class="contact__arrow"><i class="fa-sharp fa-solid fa-angles-down"></i></p> 
-            </section>
+            </section> -->
 
             <!-- Convertkit Contact Form -->
             <div class="contact-form">
