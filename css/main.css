@@ -172,6 +172,7 @@ i.fa-bars {
     background-color: var(--clr-dark);
     border-radius: 50%;
     box-shadow: var(--bs);
+    z-index: 1000;
 }
 
 
