@@ -22,15 +22,20 @@
     <body>
         <header class="header">
             <!-- Navbar -->
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a class="links" href="index.html">Home</a>
-                <a class="links" href="#events">Events</a>
-                <a class="links" href="#documents">Documents</a>
-                <a class="links" href="#about">About</a>
-                <a class="links" href="#contact">Contact</a>
+            <div>
+                <button class="nav-toggle" aria-label="toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#reminders">Reminders</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#events">Events</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#documents">Documents</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+                    </ul>
+                </nav>
             </div>
-            <span class="nav-bg" onclick="openNav()"><i class="fa-sharp fa-solid fa-bars"></i></span>
         </header>
            
         <!-- Main image of sign -->
@@ -82,7 +87,7 @@
                          <div class="single__card" id="single__card">
                             <div class="single__card--date">
                                 <p class="card__month">Dec</p>
-                                <p class="card__day">10</p>
+                                <p class="card__day">17</p>
 
                             </div>
                             <div class="single__card--details">
@@ -179,24 +184,7 @@
                 </div>
             </section>
 
-            <!-- Contact Section -->
-            <!-- <section class="contact" id="contact">
-                <h2 class="contact__title">Contact Us</h2>
-                <div class="contact__container reveal fade-top">
-                    <div class="contact__item">
-                        <img class="contact__img" src="img/hero-img.jpg" alt="thrasher landing sign" />
-                    </div>
-                    <div class="contact__item">
-                        <p class="contact__description">Have a question, concern, or just want to say hi?
-                            Send us an email at the address below and a board member will get back to you.
-                            <br><br><em>See you in the neighborhood!</em>  
-                        </p>
-                        <p class="contact__email"><i class="fa-solid fa-envelope"></i><a class="email" href="mailto:address">hello@thrasherlanding.com</a></p>
-                    </div>
-                </div>
-               <p class="contact__arrow"><i class="fa-sharp fa-solid fa-angles-down"></i></p> 
-            </section> -->
-
+            
             <!-- Convertkit Contact Form -->
             <div class="contact-form">
                 <script async data-uid="7f9b39a61d" src="https://rachelandrebeccablog.ck.page/7f9b39a61d/index.js"></script>

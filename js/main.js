@@ -1,5 +1,17 @@
 
-//toggle dark mode/light mode
+//Navigation
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelectorAll('.nav__link');
+
+navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+});
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+    });
+});
 
 
 //Animations
@@ -46,15 +58,3 @@ function backToTop() {
     document.documentElement.scrollTop = 0; //for Chrome, Firefox, IE, and Opera
 }
 
-
-// Sidenav with content pushed to the right
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById('main').style.marginLeft = "250px";
-}
-
-// set the width of the side nav to 0 and the left margin of the page content to 0 
-function closeNav() {
-    document.getElementById('mySidenav').style.width = "0";
-    document.getElementById('main').style.marginLeft = "0";
-}
