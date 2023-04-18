@@ -1,20 +1,18 @@
-
-//Navigation
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelectorAll('.nav__link');
+//hamburger menu 
+const navToggle = document.querySelector('.mobile-nav-toggle')
+const navLinks = document.querySelectorAll('.nav--link')
 
 navToggle.addEventListener('click', () => {
-    document.body.classList.toggle('nav-open');
-});
+    document.body.classList.toggle('nav-open')
+})
 
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        document.body.classList.remove('nav-open');
-    });
-});
+        document.body.classList.remove('nav-open')
+    })
+})
 
 
-//Animations
 function reveal() {
     const reveals = document.querySelectorAll('.reveal');
 
@@ -43,7 +41,7 @@ const btn = document.getElementById('btn-to-top');
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
         btn.style.display = "block";
     } else {
         btn.style.display = "none";
@@ -57,4 +55,6 @@ function backToTop() {
     document.body.scrollTop = 0; //for Safari
     document.documentElement.scrollTop = 0; //for Chrome, Firefox, IE, and Opera
 }
+
+
 
