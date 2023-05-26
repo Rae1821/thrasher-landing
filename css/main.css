@@ -490,14 +490,14 @@ a {
 .events {
     margin: 0 auto;
     background-color: var(--clr-light);
-    padding-bottom: 6em;
+    padding: 6em 2em;
 }
 
 .events__title {
     font-family: var(--ff-display);
     font-weight: var(--fw-display-semi);
     font-size: 2.5rem;
-    margin: 0 auto 4em;
+    margin: 0 auto 2em;
 }
 
 
