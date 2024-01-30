@@ -1,4 +1,4 @@
-//hamburger menu 
+//hamburger menu
 const navToggle = document.querySelector('.mobile-nav-toggle')
 const navLinks = document.querySelectorAll('.nav--link')
 
@@ -21,7 +21,7 @@ function reveal() {
         const elementTop = reveals[i].getBoundingClientRect().top;
         const elementVisible = 150;
         if(elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add('active'); 
+            reveals[i].classList.add('active');
         }    else {
             reveals[i].classList.remove('active');
         }
@@ -56,5 +56,13 @@ function backToTop() {
     document.documentElement.scrollTop = 0; //for Chrome, Firefox, IE, and Opera
 }
 
-
+//Password validation for access to documents page
+function validatePass() {
+    if(document.getElementById("password").value == "ThrasherLanding") {
+        return true;
+    } else {
+        alert("Wrong password");
+        return false;
+    }
+}
 
