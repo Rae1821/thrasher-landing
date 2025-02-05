@@ -181,7 +181,7 @@ a {
         background: transparent;
         width: 3rem;
         aspect-ratio: 1;
-        top: 0;
+        top: 10px;
         right: 8px;
         z-index: 9999;
         border: 0;
