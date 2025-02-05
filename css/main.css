@@ -886,23 +886,6 @@ label {
 
  }
 
-/* ---------------------------------- */
- /****** Contact Form ******/
-/* ---------------------------------- */
-
- .contact-form {
-    margin: auto;
-    padding: 2em;
-    align-items: center;
-    background-color: #fff;
-    border: 0;
- }
-
-.formkit-form {
-    margin: auto;
-    border: 1px solid #091D29;
- }
-
 
 
 /* Animations */
@@ -989,7 +972,7 @@ label {
 /* ------------------------------------ */
 
 .btn-to-top {
-    display: block;
+    display: none;
     position: fixed;
     bottom: 1.25rem;
     right: 1.5em;
